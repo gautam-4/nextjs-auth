@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+  --secondary-color: #1D232C;
+  --primary-color: #161B21;
+  --input-background-color: 59, 71, 88;
+  --input-placeholder-color: 169, 169, 169;
+  --input-focus-border-color: 0, 119, 228;
+  --button-background-color: 0, 119, 228;
+  --button-hover-background-color: 6, 104, 196;
+}
+
+body {
+  color: #fff;
+  background-color: black;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('/assets/grid.svg');
+  background-size: 10%;
+  background-repeat: repeat;
+  opacity: 0.9;
+  pointer-events: none;
+  z-index: -1;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
